@@ -33,3 +33,7 @@ File Compression: The current uncompressed files could be optimized using compre
 Database Consideration: Since Athena is not a full-fledged database but a query service for data lakes, I would consider migrating to Amazon Redshift for better support of DML operations. Redshift’s ACID compliance would ensure transactional integrity and more complex data operations.
 
 Production-Ready Solution: For a production environment, I would implement Apache Airflow for better orchestration, scalability, and managing workflows across multiple tasks instead of Lambda architecture.
+
+Deployment: I would create a deployment script using a CloudFormation template to automate the provisioning of resources, enabling seamless deployment through continuous integration.
+
+
